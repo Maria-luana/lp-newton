@@ -1,0 +1,20 @@
+// Vendor
+// @import "vendor/bootstrap";
+// @import "vendor/owl-carousel";
+// @import "vendor/owl-theme";
+
+// Global
+@import "global/padroes";
+@import "global/animation";
+@import "global/custom-bootstrap";
+@import "global/custom-fancybox";
+
+
+// Fontes
+// @import "fonts/fontawesome/fontawesome-all";
+@import "fonts/fonts";
+
+// Pages
+@import "pages/header";
+@import "pages/index";
+@import "pages/footer";

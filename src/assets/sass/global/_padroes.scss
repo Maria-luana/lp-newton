@@ -1,0 +1,48 @@
+// Global
+html,
+body {
+	background: #fff;
+	color: #000;
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	overflow-x: hidden;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.owl-carousel .owl-item img {
+	max-width: 100%;
+	width: initial;
+}
+
+*,
+::after,
+::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+// Cores
+$white: #FFFFFF;
+$white: #FFFFFF;
+$white-1: #FBFBFB;
+$white-2: #F4F4F4;
+$black: #000000;
+$gray: #333333;
+$gray-1: #575756;
+$gray-2: #848484;
+$red: #E42313;
+$gray-rgba-1: rgba(241, 241, 241, 0.74);
+$gray-rgba-2: rgba(156, 156, 156, 0.16);
+$BLACK-rgba: rgba(0, 0, 0, 0.11);

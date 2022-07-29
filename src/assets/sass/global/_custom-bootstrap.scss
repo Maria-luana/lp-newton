@@ -1,0 +1,66 @@
+// Custom Nav
+.navbar {
+  li {
+    a {
+      font-family: 'Segoe UI';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      color: $gray-1;
+      margin: 0px 6px;
+    }
+  }
+}
+
+// Nav Mobile
+.navbar-toggler {
+  border: 2px solid $gray;
+
+  span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51,51,51, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    font-size: 18px;
+  }
+}
+
+// Custom Modal
+.modal-dialog {
+  max-width: 550px;
+
+  .modal-content {
+    padding: 50px 30px;
+
+    .close {
+      position: absolute;
+      top: 3px;
+      right: 6px;
+    }
+  }
+}
+
+// Botão Primary
+.btn-primary {
+  background: $red;
+  border: 1px solid $red;
+  border-radius: 10px;
+  width: 145px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: $white;
+  transition: all .3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $red;
+    background-color: $red  !important;
+    border-color: $red  !important;
+    filter: brightness(0.85);
+    box-shadow: none !important;
+  }
+}

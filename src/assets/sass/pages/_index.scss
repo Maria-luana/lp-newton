@@ -1,0 +1,453 @@
+// Section Banner Introdução
+.s_intro {
+  .bg-intro {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Canaro Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: $white;
+
+    .container {
+      z-index: 99;
+    }
+
+    h1 {
+      font-family: 'Canaro';
+      font-weight: 600;
+      font-style: normal;
+      font-size: 50px;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .6);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
+
+// OWL Custom
+.owl-banner-intro {
+  .owl-dots {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+
+    .owl-dot {
+      margin: 0px 15px;
+
+      &.active {
+        span {
+          background: $white;
+        }
+      }
+
+      span {
+        width: 23px;
+        height: 23px;
+        background: $gray-2;
+        display: inline-block;
+        background: #848484;
+        border-radius: 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+      }
+    }
+  }
+}
+
+// Section Padrão - Quem Somos - Nossa Equipe
+.s_padrao {
+  padding: 60px 0px;
+
+  &#nosso-espaco {
+    padding: 0px 60px 100px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      background: url('/wp-content/themes/prototipoLP/assets/images/bg-espaco.png') no-repeat left;
+      background-size: cover;
+      width: 536px;
+      height: 825px;
+      position: absolute;
+      left: -50px;
+      top: 0px;
+    }
+
+    .infos_section {
+      padding-left: 150px;
+    }
+
+    .bg-espaco {
+      background: $white-1;
+      padding-top: 40px;
+
+      .box-espaco {
+        position: relative;
+        bottom: -100px;
+        padding-left: 150px;
+
+        .icon-preview {
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.infos_section {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: $gray-1;
+
+  h1 {
+    font-family: 'Canaro';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: 'Canaro';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &::after {
+      content: '';
+      width: 45px;
+      height: 3.15px;
+      background: $gray-1;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  .btn {
+    margin-top: 36px;
+  }
+}
+
+// Carrosel Espaço
+.icon-arrow {
+  border: 1px solid $gray-1;
+  padding: 6px 7.38px;
+  color: $gray-1;
+  cursor: pointer;
+  font-size: 22px;
+  margin: 0px 20px 10px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+}
+
+
+// Section Fale Conosco
+.s_fale_conosco {
+  padding: 80px 0px;
+
+  .infos_section {
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .list-contats {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding-bottom: 20px;
+
+        a {
+          width: 140px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $white-1;
+          border-radius: 10px;
+          margin: 0px 10px;
+          font-family: 'Segoe UI';
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          color: $red;
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .container-form {
+    background: $white-1;
+    box-shadow: 7px 7px 15px $gray-rgba-2;
+    border-radius: 10px;
+    padding: 50px 30px;
+
+    .form-control,
+    .form-control:focus,
+    .form-control:active,
+    .form-control:hover {
+      background: $gray-rgba-1;
+      border: 1px solid $gray-rgba-1;
+      border-radius: 20px;
+      height: 64px;
+      margin-bottom: 30px;
+      padding: 10px 30px;
+      font-family: 'Effra';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      color: $gray;
+      box-shadow: none !important;
+    }
+
+    textarea {
+      min-height: 250px;
+      max-height: 250px;
+    }
+
+    .form-custom-select {
+      position: relative;
+
+      &::before {
+        content: '';
+        background: url('/wp-content/themes/prototipoLP/assets/images/arrow-bottom-form.svg') no-repeat center;
+        background-size: cover;
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        top: 50%;
+        margin-top: -3.6px;
+        right: 25px;
+        z-index: 9;
+      }
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .btn-primary {
+      margin-left: auto;
+    }
+  }
+
+}
+
+
+
+// Media
+@media (max-width: 1440px) {
+
+  // Section Padrão - Quem Somos - Nossa Equipe
+  .s_padrao {
+
+    &#nosso-espaco {
+      &::before {
+        width: 455px;
+        height: 700px;
+      }
+
+
+
+      .bg-espaco {
+        .box-espaco {
+          position: relative;
+          bottom: -80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+  // Section Banner Introdução
+  .s_intro {
+    .bg-intro {
+      font-size: 20px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+    }
+  }
+
+  // OWL Custom
+  .owl-banner-intro {
+    .owl-dots {
+      margin-bottom: 20px;
+
+      .owl-dot {
+        margin: 0px 12px;
+
+        span {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  // Section Padrão - Quem Somos - Nossa Equipe
+  .s_padrao {
+    &#nosso-espaco {
+      padding: 0px 30px 80px;
+
+      &::before {
+        width: 350px;
+        height: 520px;
+      }
+
+      .infos_section {
+        padding-left: 0px;
+      }
+
+      .bg-espaco {
+        padding-top: 20px;
+
+        .box-espaco {
+          bottom: -80px;
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+
+  .infos_section {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+
+    }
+
+    .btn {
+      margin-top: 26px;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  // Section Banner Introdução
+  .s_intro {
+    .bg-intro {
+      font-size: 18px;
+
+      h1 {
+        font-size: 34px;
+      }
+
+    }
+  }
+
+  // OWL Custom
+  .owl-banner-intro {
+    .owl-dots {
+      margin-bottom: 16px;
+
+      .owl-dot {
+        margin: 0px 10px;
+
+        span {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  // Section Padrão - Quem Somos - Nossa Equipe
+  .s_padrao {
+    padding: 40px 0px;
+
+    &#nosso-espaco {
+      padding: 0px 15px 60px;
+
+      &::before {
+        width: 280px;
+        height: 400px;
+      }
+
+      .bg-espaco {
+        padding-top: 15px;
+
+        .box-espaco {
+          bottom: -40px;
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  // Section Banner Introdução
+  .s_intro {
+    .bg-intro {
+      font-size: 16px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+    }
+  }
+
+  // Section Padrão - Quem Somos - Nossa Equipe
+  .s_padrao {
+    &#nosso-espaco {
+      padding: 0px 15px 0px;
+
+      .bg-espaco {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .box-espaco {
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}
